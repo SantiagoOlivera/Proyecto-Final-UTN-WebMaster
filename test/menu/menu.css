@@ -1,0 +1,21 @@
+.logo{
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+}
+.menu{
+    list-style: none;
+    border: 1px solid black;
+    max-width: 150px;
+    
+}
+.menu li{
+    padding: 5px;
+     text-align: center;
+}
+.menu a{
+    background-color: red;
+}
+.menu a:hover{
+    background-color: red;
+}
