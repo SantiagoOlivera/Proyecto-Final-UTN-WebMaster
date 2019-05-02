@@ -1,21 +1,105 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --color-selected-menu-item: #FFCC66;
+    --color-hover-menu-item:#FF9900;
+    --color-header: #FFFFFF;
+    --color-font: #000000;
+}
+.page-static-top-menu{
+    background-color: var(--color-header);
+    width: 100%;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    box-shadow: 0px 3px 4px grey;
+}
+/*************** menu css ***************/
+.logo-align{
+    text-align: right;
+}
 .logo{
     padding: 5px;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+
 }
 .menu{
     list-style: none;
-    border: 1px solid black;
-    max-width: 150px;
-    
+    padding: 0;
+    /*border: 1px solid black;*/
+    margin:  18px 70px;
+    display: flex;
 }
 .menu li{
-    padding: 5px;
-     text-align: center;
+    display: block;
+    text-align: center;
 }
 .menu a{
-    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: block;
+    color:var(--color-font);
+}
+.rounded-corners-menu-first{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.rounded-corners-menu-last{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .menu a:hover{
-    background-color: red;
+    text-decoration: none;
+    background-color: var(--color-hover-menu-item);
+}
+.page-selected-menu-item{
+    background-color: var(--color-selected-menu-item);
+    color: var(--color-font);
+}
+
+
+/*************** Submenu  css ***************/
+.submenu{
+    margin: 20px auto 0 auto;
+    list-style: none;
+    display: flex;
+}
+.submenu li{
+    padding: 5px;
+    display: block;
+}
+.submenu a{
+    color: var(--color-font);
+    padding: 3px;
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+.submenu a:hover{
+    text-decoration: none;
+    background-color: var(--color-hover-menu-item);
+}
+.close-submenu{
+    width:100%;
+    text-align: right;
+}
+.selected-submenu{
+    background-color: var(--color-selected-menu-item); 
+} 
+.close-submenu a{
+    padding: 0px 10px;
+    border:1px solid black;
+    border-radius: 15px;
+}
+
+/********* Content css **********/
+.spacer{
+    width: 100%;
+    height: 180px;
 }
