@@ -9,42 +9,145 @@
     --color-header: #FFFFFF;
     --color-font: #000000;
 }
-/* STATIC MENU */
+/**************** STATIC MENU **********************/
 .static-top-menu{
     position: fixed;
+    background-color: var(--color-header);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    height: auto;
 }
-/* MENU  */
+/****************** MENU  *****************/
 .menu{
-    margin: 5px;
+    margin: 3px;
+    height:120px;
+    display: flex;
 }
 .menu-image{
-    max-width: 200px;
-    max-height: 200px;
+    display: block;
+    width: 170px;
+    height: 100%;
     margin:0 auto;
+    text-align: center;
+    padding-top:0px;
+    flex-grow: 1;
 }
 .menu-image img{
-    width: 100%;
-    height: 100%;
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    height: 120px;
     border-radius: 20px;
+    border: 3px solid var(--color-selected-menu-item);
+
 }
 .menu-items{
+    height: 100%;
+    flex-grow: 3;
+}
+.menu-items ul{
+    margin-top: 20px;
     list-style: none;
     display: flex;
 }
 .menu-items li{
-    padding: 15px;
+    padding: 10px;
+    flex-grow: 1;
 }
 .menu-items a{
+    text-align: center;
+    padding: 5px 25px;
+    text-decoration: none;
     display: block;
+    border-radius: 5px;
+    color: var(--color-font);
+    font-size:30px;
+
 }
 .menu-items a:hover{
-    background-color: var(--color-hover-menu-item);
+    background-color: var(--color-selected-menu-item);
 }
+
+.menu-items i{
+    display: none;
+    font-size: 30px;
+    float: right;
+    padding: 15px;
+    border: 3px solid var(--color-selected-menu-item);
+    border-radius: 10px;
+}
+.menu-items i:hover{
+    background-color: var(--color-selected-menu-item);
+}
+
+/**************** SUBMENU *******************/
 .submenu{
     width:100%;
+    height: auto;
+    margin: 0 auto;
 }
 .submenu-items{
     list-style: none;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+.submenu-items li{
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+.submenu-items a{
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+    color: var(--color-font);
+    border: 3px solid var(--color-selected-menu-item);
+}
+.submenu-items a:hover{
+    text-decoration: none;
+    background-color: var(--color-selected-menu-item);
+}
+
+
+
+/***************   Responsive (Menu) *************/
+
+@media (max-width: 640px){
+    .menu-items li{
+        display: none;
+    }
+    .menu-items i{
+        display: block;
+        position: relative;
+        top: 25px;
+    }
+    .submenu{
+        display: none;
+    }
+}
+
+/********* Content css **********/
+.spacer{
+    width: 100%;
+    height: 105px;
+}
+
+/************  Slider *************/
+.slider{
+    padding: 10px;
+    width:100%;
+    height: 430px;
+    border: 1px solid black;
+}
+.slider-images{
+    border:1px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.slider-arrows{
+    position: relative;
+    
+    border:1px solid black;
+    width: 100%;
+    height: 50px;
+
 }
