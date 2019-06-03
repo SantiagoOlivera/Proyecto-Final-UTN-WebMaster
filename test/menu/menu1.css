@@ -8,10 +8,17 @@
     --color-selected-menu-item: rgb(255, 204, 102);
     --color-active-menu-item:rgb(255, 208, 146);
     --color-header: #FFFFFF;
-    --color-font: #000000;      
+    --color-font: #000000;
+    --color-principal: rgb(255, 204, 102);  
+    --color-footer:4c4c4c;
 }
 /**************** Fuente Menu **********************/
 .menu li a{
+    font-size:30px;
+    font-family: 'Pacifico', cursive;
+}
+/**************** Fuente Headers **********************/
+h1{
     font-size:30px;
     font-family: 'Pacifico', cursive;
 }
@@ -32,7 +39,7 @@
 }
 .menu-image{
     display: block;
-    width: 170px;
+    width: 250px;
     height: 100%;
     margin:0 auto;
     text-align: center;
@@ -61,24 +68,18 @@
     text-decoration: none;
     font-family: 'Pacifico', cursive;
 }
-
-
-
 .menu-items{
     height: 100%;
     flex-grow: 1;
     text-align: center;
 }
-
 .menu-list{
     margin-top: 30px;
     margin-right: 20px;
     list-style: none;
     display: flex; 
 }
-
-
-.menu-list a{
+.menu-item a{
     text-align: center;
     padding: 5px 25px;
     text-decoration: none;
@@ -88,7 +89,6 @@
     border: 1px solid rgba(255, 204, 102,0.5);
     /* background-color: #ffe2a9;*/
 }
-
 .menu-items-first{
     border-radius: 20px 0 0 20px;
     border-right: 0 !important;
@@ -100,8 +100,28 @@
 .active-menu-item{
     background-color: var(--color-active-menu-item);
 }
-.menu-items a:hover{
+.menu-item a:hover{
     background-color: var(--color-selected-menu-item);
+}
+.login{
+    width:100%;
+    height: 65px;
+    text-align: right;
+    padding: 2px 20px;
+    display: block;
+    color: var(--color-font);
+    /* border: 1px solid rgba(255, 204, 102,0.5);  */
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.login img{
+    width: 65px;
+    height: 60px;
+    border-radius: 20px;
+    border: 1px solid var(--color-principal);
+}
+.login img:hover{
+    
 }
 
 /***************** Icon Menu resposive *********************/
@@ -128,31 +148,29 @@
 .submenu-items{
     list-style: none;
     display: flex;
-    text-align: center;
-    margin: 0 auto;
+    margin:0 auto;
+    max-width: 760px;
 }
-.submenu-items li{
-    padding: 15px;
+.submenu-item{
+    padding: 10px;
     flex-grow: 1;
     text-align: center;
 }
-.submenu-items a{
+.submenu-item a{
     padding: 5px;
     display: block;
     border-radius: 5px;
     color: var(--color-font);
     border: 1px solid rgba(255, 204, 102,0.7);
+    max-width: 200px;
 }
-.submenu-items a:hover{
+.submenu-item a:hover{
     text-decoration: none;
     background-color: var(--color-selected-menu-item);
 }
-
 .submenu-item a{
     text-decoration: none;
 }
-
-
 /***************   Responsive (Menu) *************/
 
 @media (max-width: 640px){
@@ -173,18 +191,107 @@
     }
     .submenu{
         display: none;
-    }
-
-    
+    }  
 }
 
-/********* Content css **********/
+/***************************** CONTENT CSS ****************************/
 .spacer{
     width: 100%;
     height: 110px;
 }
+.content{
+    width: 100%;
+    padding:30px;
+}
+/************ Content Quienes Somos****************/
+.block1{
+    max-width: 1000px;
+    margin:0 auto;
+    display: flex;
+    height: auto;
+}
+.block-image{
+    width: 50%;
+    margin:5px;
+    height: auto;
+}
+.block-image img{
+    width: 100%;
+    border-radius: 50px;
+}
+.block-text{
+    width: 50%;
+    margin: 15px;
+    text-align: justify;
+}
+/************ Content Como Ordenar****************/
+.block2{
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+.block-child{
+    flex: 1;
+    margin: 10px;
+    border: 1px solid var(--color-principal);
+    border-radius: 0 50px 50px 50px;
+    height: 340px;
+}
+.option h2{
+    text-align: center;
+}
+.option-number{
+    width:60px;
+    height:60px;
+    text-align: center;
+    background-color:var(--color-principal);
+    border-radius:  0 0 30px 0;
+    padding-top:8px;
+    padding-right: 5px; 
+}
+.option-icon{
+    text-align: center;
+    font-size: 75px;
+}
+.option-description{
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+    text-align: justify;
+}
+/************ Content Opiniones****************/
+.block3{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    height: auto;
+}
+.opinion{
+    margin:10px;
+    border-radius: 25px;
+    border: 1px solid var(--color-principal);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.opinion-image{
+    margin: 20px;
+    width:80px;
+    height: 80px;
+}
+.opinion-image img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.opinion-text{
+    flex:1;
+}
 
-/************  Slider *************/
+
+/************************************  Slider *************************************/
 .slider{
     padding: 10px;
     width:100%;
@@ -199,7 +306,6 @@
 }
 .slider-arrows{
     position: relative;
-    
     border:1px solid black;
     width: 100%;
     height: 50px;
