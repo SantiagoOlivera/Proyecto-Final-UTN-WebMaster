@@ -37,6 +37,7 @@ h1{
     margin: 0;
     height:130px;
     display: flex;
+    height: auto;
 }
 .menu-image{
     display: block;
@@ -63,6 +64,7 @@ h1{
     text-align: center;
     font-size:30px;
     padding-top: 25px; 
+    
 }
 .logo a{ 
     color:black;
@@ -116,13 +118,14 @@ h1{
     margin-left: 30px;
 }
 .login img{
-    width: 65px;
+    width: 60px;
     height: 60px;
     border-radius: 20px;
     border: 1px solid var(--color-principal);
 }
 .login img:hover{
-    
+    opacity: 0.7;
+    border:3px solid var(--color-selected-menu-item);
 }
 
 /***************** Icon Menu resposive *********************/
@@ -175,7 +178,7 @@ h1{
 /***************************** CONTENT CSS ****************************/
 .spacer{
     width: 100%;
-    height: 110px;
+    height: 100px;
 }
 .content{
     width: 100%;
@@ -286,22 +289,101 @@ h1{
  }
 /************************************  Slider *************************************/
 .slider{
-    padding: 10px;
     width:100%;
-    height: 430px;
-    border: 1px solid black;
+    height: auto;
+    position: relative;
 }
 .slider-images{
-    border:1px solid black;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: 500px;
+    /* background-image: url(../../img/slider/slider-image-1.jpg); */
+}
+.slider-images img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
 .slider-arrows{
-    position: relative;
-    border:1px solid black;
+    position: absolute;
+    top: 200px;
+    width:100%;
+    height:100px;
+    padding-left:5px;
+    padding-right:5px;
+    
+}
+.left-arrow{
+    float: left;
+    width:50px;
+    height: 100%;
+}
+.right-arrow{
+    float: right; 
+    width:50px;
+    height: 100%;
+}
+.left-arrow a{
+    background-color: var(--color-active-menu-item);
+    display: block;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+    font-size: 40px;
+    color:grey;
+    height:100%;
+    padding-top: 20px; 
+}
+.right-arrow a{
+    background-color: var(--color-active-menu-item);
+    display: block;
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    font-size: 40px;
+    color:grey;
+    height:100%;
+    padding-top: 20px;
+    padding-left:15px; 
+}
+.left-arrow a:hover{
+    background-color: var(--color-principal);
+}
+.right-arrow a:hover{
+    background-color: var(--color-principal);
+}
+
+.pager{
+    position: absolute;
+    top: 100%;
+    margin:0 auto;
+    padding: 5px;
     width: 100%;
-    height: 50px;
+    height: auto;
+}
+.pager-items{
+    max-width: 130px;
+    margin:0 auto;
+    height: 40px;
+    display: flex;
+}
+.pager-item{
+    margin: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.pager-item a{
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.pager-item a:hover{
+    background-color: var(--color-selected-menu-item);
+}
+.pager-item-active a{
+    background-color: var(--color-active-menu-item);
 }
 /***************   Mapa  *************/
 .mapa{
@@ -332,15 +414,19 @@ h1{
 @media (max-width: 1200px){
     /************ Content Quienes Somos ****************/
     .block1{
-        text-align: center;
-        margin: 0 auto;
-        max-width: 100%;
+       display: grid;
+       grid-template-columns: 1fr; 
+       text-align: center;
+       max-width: 600px;
+       grid-auto-flow: dense;
     }
     .block-image{
-        margin: 0 auto;
+       width: 100%;
+       grid-row: 2; 
     }
     .block-text{
-        margin:0 auto;
+        width: 100%;
+        grid-row: 1;
     }
     
     /************ Content Como Ordenar****************/
@@ -351,13 +437,20 @@ h1{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    /***************   Footer  *************/
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /************ Slider ****************/
+    
    
 }
 @media (max-width: 640px){
     .menu{
         border: 0;
-        box-shadow: none;
-        height: 100px;    
+        box-shadow: none;  
     }
     .menu-image img{
         width: 85px;
@@ -377,4 +470,5 @@ h1{
         display: grid;
         grid-template-columns: 1fr; 
     }
+    
 }
