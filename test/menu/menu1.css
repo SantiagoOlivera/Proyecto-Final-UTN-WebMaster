@@ -80,7 +80,8 @@ h1{
 .menu-items{
     height: 100%;
     text-align: center;
-    margin-left: 45px;
+    margin: 0 auto;
+	max-width: 643px;
     flex:50%;
 }
 .menu-item{
