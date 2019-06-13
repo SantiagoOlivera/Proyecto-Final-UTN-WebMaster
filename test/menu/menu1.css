@@ -125,6 +125,7 @@ h1{
     height: 63px;
     border-radius: 15px;
     border: 1px solid var(--color-principal);
+    
 }
 .login-image img{
     width:100%;
@@ -133,6 +134,28 @@ h1{
 }
 .login-image img:hover{
     opacity: 0.8;
+}
+.login-image img:hover .user-accaunt{
+    display: none;
+}
+
+/************************* Login User *******************/
+.login-user{
+    position: relative;
+    top:-32px;
+    float:left;
+    width: 100%;
+   /*  border:1px solid orange; */
+    height: 0;
+}
+.user-acount{
+    margin-right: 10px;
+    border:1px solid orange;
+    height: 300px;
+    min-width: 400px;
+    float: right;
+    border-radius: 15px 0 15px 15px;
+    
 }
 /***************** Icon Menu resposive *********************/
 .menu-items i{
@@ -151,6 +174,7 @@ h1{
 
 /**************** SUBMENU *******************/
 .submenu{
+    clear: both;
     width:100%;
     height: auto;
 }

@@ -24,3 +24,12 @@ listSubItems.forEach(
     }
 );
 
+function openLogInOut(){
+    var userLogInOut = document.getElementById("user-acount"); 
+    userLogInOut.style.display = "block";
+}
+function closeLogInOut(){
+    var userLogInOut = document.getElementById("user-acount"); 
+    userLogInOut.style.display = "none";
+}
+
