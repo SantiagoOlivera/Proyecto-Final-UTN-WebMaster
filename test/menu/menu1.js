@@ -24,12 +24,22 @@ listSubItems.forEach(
     }
 );
 
-function openLogInOut(){
-    var userLogInOut = document.getElementById("user-acount"); 
+var clickImage = document.getElementById("toggle-user-account");
+var userLogInOut = document.getElementById("user-account");
+clickImage.addEventListener(
+    "click",
+    function(){
+        console.log("dsad");
+        userLogInOut.classList.toggle("display-user-account");
+    }
+);
+
+/* function openLogInOut(){
+    var userLogInOut = document.getElementById("user-account"); 
     userLogInOut.style.display = "block";
 }
 function closeLogInOut(){
-    var userLogInOut = document.getElementById("user-acount"); 
+    var userLogInOut = document.getElementById("user-account"); 
     userLogInOut.style.display = "none";
 }
-
+ */

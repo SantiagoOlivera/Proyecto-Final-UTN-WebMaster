@@ -119,13 +119,12 @@ h1{
     height: 65px;
 }
 .login-image{
-    margin-right: 10px;
+    margin-right: 18px;
     float: right;
     width: 63px;
     height: 63px;
     border-radius: 15px;
     border: 1px solid var(--color-principal);
-    
 }
 .login-image img{
     width:100%;
@@ -148,14 +147,26 @@ h1{
    /*  border:1px solid orange; */
     height: 0;
 }
-.user-acount{
+.user-account{
     margin-right: 10px;
     border:1px solid orange;
     height: 300px;
     min-width: 400px;
     float: right;
     border-radius: 15px 0 15px 15px;
-    
+    display: none;
+}
+.display-user-account{
+    display: block;
+}
+.bridge{
+    position: relative;
+    top:-70px;
+    left: 1px;
+    float: right;
+    width:80px;
+    height: 80px;
+    border: 1px solid orange;
 }
 /***************** Icon Menu resposive *********************/
 .menu-items i{
