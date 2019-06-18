@@ -24,7 +24,7 @@ listSubItems.forEach(
     }
 );
 
-var clickImage = document.getElementById("toggle-user-account");
+/* var clickImage = document.getElementById("toggle-user-account");
 var userLogInOut = document.getElementById("user-account");
 clickImage.addEventListener(
     "click",
@@ -32,14 +32,12 @@ clickImage.addEventListener(
         console.log("dsad");
         userLogInOut.classList.toggle("display-user-account");
     }
-);
-
-/* function openLogInOut(){
-    var userLogInOut = document.getElementById("user-account"); 
+); */
+var userLogInOut = document.getElementById("user-account");
+function openLogInOut(){
     userLogInOut.style.display = "block";
 }
 function closeLogInOut(){
-    var userLogInOut = document.getElementById("user-account"); 
     userLogInOut.style.display = "none";
 }
- */
+

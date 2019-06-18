@@ -141,33 +141,82 @@ h1{
 /************************* Login User *******************/
 .login-user{
     position: relative;
-    top:-32px;
+    top:-100px;
     float:left;
     width: 100%;
    /*  border:1px solid orange; */
     height: 0;
 }
+.login-user {
+    /* border: 1px solid black; */
+}
 .user-account{
     margin-right: 10px;
     border:1px solid orange;
-    height: 300px;
-    min-width: 400px;
+    height:auto;
+    min-width: 300px;
     float: right;
-    border-radius: 15px 0 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     display: none;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.user-header{
+    display: flex;
+}
+.user-account-icon{
+    flex:1;
+}
+.user-account-name{
+    text-emphasis: right;
+    flex: 1;
+    padding:10px;
+    font-size:12px;
+}
+.login-image-user-account{
+    flex:1;
+}
+.user-account-icon i{
+    margin: 10px;
+    padding: 8px 10px 10px 12px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid var(--color-principal);
+    border-radius: 10px;
+}
+.login-image-user-account img{
+    float: right;
+    margin:5px;
+    width: 63px;
+    height: 63px;
+    border-radius: 15px;
+    border: 1px solid var(--color-principal);
+}
+.user-account i:hover{
+    background-color: var(--color-principal);
 }
 .display-user-account{
     display: block;
 }
-.bridge{
-    position: relative;
-    top:-70px;
-    left: 1px;
-    float: right;
-    width:80px;
-    height: 80px;
-    border: 1px solid orange;
+/***************** User Options *********************/
+.user-options{
+    padding: 15px;
 }
+.user-options a{
+    padding: 5px;
+    margin:5px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+}
+.user-options a:hover{
+    background-color:var(--color-principal);
+}
+/***************** User log out  *********************/
+
+
 /***************** Icon Menu resposive *********************/
 .menu-items i{
     display: none;
@@ -224,6 +273,12 @@ h1{
     width: 100%;
     padding:30px;
 }
+.block-title{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+}
 /************ Content Quienes Somos****************/
 .block1{
     max-width: 1000px;
@@ -251,6 +306,7 @@ h1{
 /************ Content Como Ordenar ****************/
 .block2{
     margin:0 auto;
+    max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -329,9 +385,11 @@ h1{
  }
 /************************************  Slider *************************************/
 .slider{
+    margin: 0 auto;
     width:100%;
     height: auto;
     position: relative;
+    max-width: 1500px;
 }
 .slider-images{
     padding: 0 20px 0 20px;
@@ -350,8 +408,7 @@ h1{
     width:100%;
     height:100px;
     padding-left:5px;
-    padding-right:5px;
-    
+    padding-right:5px;  
 }
 .left-arrow{
     float: left;
@@ -425,6 +482,77 @@ h1{
 .pager-item-active a{
     background-color: var(--color-active-menu-item);
 }
+/***************   Food Slider  *************/
+.block4{
+    margin:0;
+    width: 100%;
+    height: 356px;
+    border:1px solid black;
+    padding: 2px;
+}
+.food-slider{
+    position: relative;
+    top:-100px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border:1px solid black;
+    margin: 0 auto;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.food-item{ 
+    min-width: 300px;
+    height:100%;
+    padding: 15px 15px 15px 15px;
+}
+.food-slider-arrows{
+    margin:0 auto;
+    width:100%;
+    max-width: 1300px;
+    border:1px solid black;
+    height: 100px;
+    position: relative;
+    top:125px;
+}
+.food-slider-arrow-left{
+    margin-left: 10px;
+    margin-top: 25px; 
+    float: left;
+}
+.food-slider-arrow-right{
+    margin-right: 10px;
+    margin-top: 25px; 
+    float: right;
+}   
+.food-slider-arrow-left i{
+    font-size: 50px;
+}
+.food-slider-arrow-right i{
+    font-size: 50px;
+}
+.food-item:hover{
+    padding: 0;
+}
+.food-item:hover > .food-item-child{
+    box-shadow: 0px 0px 3px 3px rgba(162, 159, 159,0.4);
+    transition: 0.4s;
+}
+.food-item-child{
+    border-radius: 25px;
+    width: 100%;
+    height:100%;
+    border:2px solid var(--color-principal);
+    padding: 7px;
+}
+.food-item-child img{
+    border-radius: 20px;
+    width: 100%;
+    height: 60%;
+}
+
+
 /***************   Mapa  *************/
 .mapa{
     margin: 0;
@@ -448,6 +576,31 @@ h1{
     margin: 10px;
     padding: 15px;
 }
+
+
+/***************   Modified Scrollbar *************/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: none;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:gray ;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-active-menu-item); 
+  }
+
+
 /***************   Responsive (Menu) *************/
 
 
@@ -482,14 +635,16 @@ h1{
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    /************ Slider ****************/
-
     /************ Slider ****************/
     .menu-items{
         margin-left: 0;
     }
-    
+    .slider-images{
+        height: 350px;
+    }
+    .slider-arrows{
+        top:120px;
+    }    
    
 }
 @media (max-width: 640px){
@@ -514,6 +669,13 @@ h1{
     .block2{
         display: grid;
         grid-template-columns: 1fr; 
+    }
+    /************ Slider ****************/
+    .slider-images{
+        height: calc(450px *0.5);
+    }
+    .slider-arrows{
+        top:65px;
     }
     
 }

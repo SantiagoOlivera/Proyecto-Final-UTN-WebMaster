@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+}
+:root{
+    --color-selected-menu-item: rgb(255, 204, 102);
+    --color-active-menu-item:rgb(255, 208, 146);
+    --color-header: #FFFFFF;
+    --color-font: #000000;
+    --color-principal: rgb(255, 204, 102);  
+    --color-footer:#4c4c4c;
+}
+.back{
+    width: 100%;
+}
+.back a{
+    padding: 20px;
+    color:black;
+    background-color: var(--color-principal);
+    width:50px;
+    height: 50px;
+}
+.back a:hover{
+    background-color: var(--color-active-menu-item);
+}
+.contact-form{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.contact-form-item{
+    margin:0 auto;
+    max-width: 720px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+.form-item-label{
+    width: 100%;
+    margin: 0 auto;
+}
+.form-item-control input{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid orange;
+    height:50px;
+    border-radius: 10px;
+}
+.form-item-control textarea{
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+    height: 250px;
+}
+#sendEmail{
+    background-color:var(--color-principal);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    float: right;
+}
+#sendEmail:hover{
+    background-color:var( --color-active-menu-item);
+}

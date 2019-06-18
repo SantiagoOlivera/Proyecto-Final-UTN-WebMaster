@@ -38,19 +38,36 @@
                                 <a href="#">Pedidos</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-items-last" href="#">Contacto</a>
+                                <a class="menu-items-last" href="contact-form.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
                     <div class="login">
                         <div class="login-image">
-                            <img  id="toggle-user-account" src="../../img/user-without-image.png" alt="">
+                            <img onclick="openLogInOut()" src="../../img/user-without-image.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="login-user">
-                    <div id="user-account" class="user-account">
-                         <div class="bridge"></div>
+                <!-- User desplegable menu -->
+                <div  class="login-user">
+                    
+                    <div class="user-account"  id="user-account">
+                        <div  class="user-header">
+                            <div class="user-account-icon">
+                                <i onclick="closeLogInOut()" class="fa fa-times"></i>
+                            </div>
+                            <div class="user-account-name">
+                                <h2 class="user-name">@UserName</h2>
+                            </div>
+                            <div class="login-image-user-account">
+                                <img src="../../img/user-without-image.png" alt="">
+                            </div>
+                        </div>
+                        <div class="user-options">
+                            <a href="">Option 1</a>
+                            <a href="">Option 2</a>
+                            <a href="">Option 3</a>
+                        </div>
                     </div>
                 </div>
                 <div class="submenu">
@@ -136,8 +153,10 @@
                 </div>
                 <div class="spacer">
                 </div>
-                <h1>Cómo Ordenar</h1>
-                    <div class="block2">
+                    <div class="block-title">
+                        <h1>Cómo Ordenar</h1>
+                    </div>
+            <div class="block2">
                         <div class="block-child">
                                 <div class="step">
                                     <div class="step-number">
@@ -160,7 +179,7 @@
                                         <h2>2</h2> 
                                     </div>
                                     <div class="step-icon">
-                                            <i class="	fas fa-check"></i>
+                                            <i class="fas fa-check"></i>
                                     </div>
                                     <h2>Confirmamos su pedido</h2>
                                     <div class="step-description">
@@ -203,9 +222,11 @@
                                             </div>
                                     </div>
                             </div> 
-                    </div>
-                  <h1>Opiniones de nuestros clientes</h1>
-                  <div class="block3">
+                </div>
+                <div class="block-title">
+                    <h1>Opiniones de nuestros clientes</h1>
+                </div>
+                <div class="block3">
                        <div class="opinion">
                             <div class="opinion-image">
                                  <img src="../../img/user-without-image.png" alt="">
@@ -269,10 +290,47 @@
                                 <i class="fa fa-star"></i>
                            </div>
                        </div>
-                  </div>    
+                  </div>
+        </div>
+       <div class="block4">
+            <div class="food-slider-arrows">
+                <div class="food-slider-arrow-left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="food-slider-arrow-right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="food-slider">
+                <div class="food-item">
+                    <div class="food-item-child">
+                        <img src="..\..\img\slider\hamburguesa-1.jpg" alt="">
+                    </div> 
+                </div>
+                <div class="food-item">
+                     <div class="food-item-child">
+                        <img src="..\..\img\slider\hamburguesa-2.jpg" alt="">  
+                     </div>  
+                </div>
+                <div class="food-item">
+                     <div class="food-item-child">
+                            <img src="..\..\img\whoweare-image-1.jpg" alt="">  
+                     </div> 
+                </div>
+                <div class="food-item">
+                     <div class="food-item-child">
+                        <img src="..\..\img\whoweare-image-2.jpg" alt="">     
+                     </div>   
+                </div>
+                <div class="food-item">
+                     <div class="food-item-child">
+                                
+                     </div>   
+                </div>
+            </div>
+            
         </div>
     </content>
-
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3282.7613982823905!2d-58.3660222822291!3d-34.635469464290374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca5b2748858b40d!2sEstadio+Alberto+J.+Armando!5e0!3m2!1ses-419!2sar!4v1559786863165!5m2!1ses-419!2sar" 
             width="100%" 
