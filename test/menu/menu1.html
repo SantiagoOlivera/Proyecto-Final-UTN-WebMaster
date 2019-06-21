@@ -13,6 +13,8 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
     integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' 
     crossorigin='anonymous'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
     <link rel="stylesheet" href="menu1.css">
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
@@ -292,7 +294,7 @@
                        </div>
                   </div>
         </div>
-       <div class="block4">
+      <!--  <div class="block4 swiper-container">
             <div class="food-slider-arrows">
                 <div class="food-slider-arrow-left">
                     <i class="fas fa-chevron-left"></i>
@@ -301,34 +303,79 @@
                     <i class="fas fa-chevron-right"></i>
                 </div>
             </div>
-            <div class="food-slider">
-                <div class="food-item">
-                    <div class="food-item-child">
-                        <img src="..\..\img\slider\hamburguesa-1.jpg" alt="">
-                    </div> 
+            <div class="food-slider swiper-wrapper">
+                <div class="food-item swiper-slide">
+                    
                 </div>
-                <div class="food-item">
+                <div class="food-item swiper-slide">
                      <div class="food-item-child">
                         <img src="..\..\img\slider\hamburguesa-2.jpg" alt="">  
                      </div>  
                 </div>
-                <div class="food-item">
+                <div class="food-item swiper-slide">
                      <div class="food-item-child">
                             <img src="..\..\img\whoweare-image-1.jpg" alt="">  
                      </div> 
                 </div>
-                <div class="food-item">
+                <div class="food-item swiper-slide">
                      <div class="food-item-child">
                         <img src="..\..\img\whoweare-image-2.jpg" alt="">     
                      </div>   
                 </div>
-                <div class="food-item">
+                <div class="food-item swiper-slide">
                      <div class="food-item-child">
                                 
                      </div>   
                 </div>
             </div>
             
+        </div> -->
+        <div class="block4 swiper-container">
+             <div class="food-slider swiper-wrapper">
+                  <div class="swiper-slide">
+                       <div class="food-item">
+                            <div class="food-item-child">
+                                    <img src="..\..\img\slider\hamburguesa-1.jpg" alt="">
+                                    <button>Agregar al Carro</button>
+                            </div> 
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="food-item">
+                            <div class="food-item-child">
+                                    <img src="..\..\img\whoweare-image-1.jpg" alt="">  
+                                    <button>Agregar al Carro</button>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="food-item">
+                            <div class="food-item-child">
+                                    <img src="..\..\img\slider\hamburguesa-2.jpg" alt="">
+                                    <button>Agregar al Carro</button>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="food-item">
+                            <div class="food-item-child">
+                                    <img src="..\..\img\whoweare-image-2.jpg" alt="">  
+                                    <button>Agregar al Carro</button>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="food-item">
+                            <div class="food-item-child">
+                                    <img src="..\..\img\slider\hamburguesa-1.jpg" alt="">
+                                    <button>Agregar al Carro</button>
+                            </div>
+                        </div>
+                  </div>
+             </div>
+             <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </content>
     <div class="mapa">
@@ -356,8 +403,11 @@
         </div>
     </footer>
 
-    <script src="menu1.js">
-    </script>
-
+    <script src="menu1.js"></script>
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="swiper.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
